@@ -1,6 +1,6 @@
 {
   "title":"calc() as CSS unit value",
-  "description":"Method of allowing calculated values for length units, i.e. width: calc(100% - 3em)",
+  "description":"Method of allowing calculated values for length units, i.e. `width: calc(100% - 3em)`",
   "spec":"http://www.w3.org/TR/css3-values/#calc",
   "status":"cr",
   "links":[
@@ -11,10 +11,22 @@
     {
       "url":"https://developer.mozilla.org/en/CSS/-moz-calc",
       "title":"MDN article"
+    },
+    {
+      "url":"http://docs.webplatform.org/wiki/css/functions/calc",
+      "title":"WebPlatform Docs"
     }
   ],
   "bugs":[
-    
+    {
+      "description":"IE10 crashes when a div with a property using `calc()` has a child with [same property with inherit](http://stackoverflow.com/questions/19423384/css-less-calc-method-is-crashing-my-ie10)."
+    },
+    {
+      "description":"IE 9 - 11 don't render `box-shadow` when `calc()` is used for any of the values"
+    },
+    {
+      "description":"IE10 and IE11 don't support using `calc()` inside a `transform`. [Bug report](https://connect.microsoft.com/IE/feedback/details/814380/)"
+    }
   ],
   "categories":[
     "CSS3"
@@ -25,8 +37,10 @@
       "6":"n",
       "7":"n",
       "8":"n",
-      "9":"y",
-      "10":"y"
+      "9":"a",
+      "10":"y",
+      "11":"y",
+      "TP":"y"
     },
     "firefox":{
       "2":"n",
@@ -48,7 +62,28 @@
       "16":"y",
       "17":"y",
       "18":"y",
-      "19":"y"
+      "19":"y",
+      "20":"y",
+      "21":"y",
+      "22":"y",
+      "23":"y",
+      "24":"y",
+      "25":"y",
+      "26":"y",
+      "27":"y",
+      "28":"y",
+      "29":"y",
+      "30":"y",
+      "31":"y",
+      "32":"y",
+      "33":"y",
+      "34":"y",
+      "35":"y",
+      "36":"y",
+      "37":"y",
+      "38":"y",
+      "39":"y",
+      "40":"y"
     },
     "chrome":{
       "4":"n",
@@ -72,7 +107,26 @@
       "22":"y x",
       "23":"y x",
       "24":"y x",
-      "25":"y x"
+      "25":"y x",
+      "26":"y",
+      "27":"y",
+      "28":"y",
+      "29":"y",
+      "30":"y",
+      "31":"y",
+      "32":"y",
+      "33":"y",
+      "34":"y",
+      "35":"y",
+      "36":"y",
+      "37":"y",
+      "38":"y",
+      "39":"y",
+      "40":"y",
+      "41":"y",
+      "42":"y",
+      "43":"y",
+      "44":"y"
     },
     "safari":{
       "3.1":"n",
@@ -80,7 +134,11 @@
       "4":"n",
       "5":"n",
       "5.1":"n",
-      "6":"y x"
+      "6":"y x",
+      "6.1":"y",
+      "7":"y",
+      "7.1":"y",
+      "8":"y"
     },
     "opera":{
       "9":"n",
@@ -94,17 +152,34 @@
       "11.6":"n",
       "12":"n",
       "12.1":"n",
-      "12.5":"n"
+      "15":"y",
+      "16":"y",
+      "17":"y",
+      "18":"y",
+      "19":"y",
+      "20":"y",
+      "21":"y",
+      "22":"y",
+      "23":"y",
+      "24":"y",
+      "25":"y",
+      "26":"y",
+      "27":"y",
+      "28":"y",
+      "29":"y"
     },
     "ios_saf":{
       "3.2":"n",
       "4.0-4.1":"n",
       "4.2-4.3":"n",
       "5.0-5.1":"n",
-      "6":"y x"
+      "6.0-6.1":"y x",
+      "7.0-7.1":"y",
+      "8":"y",
+      "8.1-8.3":"y"
     },
     "op_mini":{
-      "5.0-7.0":"n"
+      "5.0-8.0":"n"
     },
     "android":{
       "2.1":"n",
@@ -112,11 +187,15 @@
       "2.3":"n",
       "3":"n",
       "4":"n",
-      "4.1":"n"
+      "4.1":"n",
+      "4.2-4.3":"n",
+      "4.4":"a",
+      "4.4.3-4.4.4":"a",
+      "40":"y"
     },
     "bb":{
       "7":"n",
-      "10":"y x"
+      "10":"y"
     },
     "op_mob":{
       "10":"n",
@@ -124,20 +203,33 @@
       "11.1":"n",
       "11.5":"n",
       "12":"n",
-      "12.1":"n"
+      "12.1":"n",
+      "24":"y"
     },
     "and_chr":{
-      "0":"n"
+      "41":"y"
     },
     "and_ff":{
-      "0":"y x"
+      "36":"y"
+    },
+    "ie_mob":{
+      "10":"y",
+      "11":"y"
+    },
+    "and_uc":{
+      "9.9":"n"
     }
   },
-  "notes":"Support can be somewhat emulated in older versions of IE using the non-standard expression() syntax.",
-  "usage_perc_y":69.18,
-  "usage_perc_a":0,
+  "notes":"Support can be somewhat emulated in older versions of IE using the non-standard `expression()` syntax. Partial support in IE9 refers to the browser crashing when used as a `background-position` value. Partial support in Android Browser 4.4 refers to the browser lacking the ability to multiply and divide values.",
+  "notes_by_num":{
+    
+  },
+  "usage_perc_y":78.46,
+  "usage_perc_a":5.24,
   "ucprefix":false,
   "parent":"",
   "keywords":"",
+  "ie_id":"csscalc",
+  "chrome_id":"5765241438732288",
   "shown":true
 }

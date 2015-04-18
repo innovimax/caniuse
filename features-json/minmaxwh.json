@@ -9,13 +9,20 @@
       "title":"JS library with support"
     },
     {
-      "url":"http://reference.sitepoint.com/css/dimensions",
-      "title":"Sitepoint reference"
+      "url":"http://docs.webplatform.org/wiki/css/properties/min-width",
+      "title":"WebPlatform Docs"
+    },
+    {
+      "url":"http://www.impressivewebs.com/min-max-width-height-css/",
+      "title":"CSS Basics post"
     }
   ],
   "bugs":[
     {
-      "description":"IE7 doesn't support min-width on input button/submit button/reset button.\r\nhttp://steve.ganz.name/examples/Forms/min-width-input.html"
+      "description":"IE7 doesn't support min-width on input button/submit button/reset button."
+    },
+    {
+      "description":"Safari on iOS 5.1 does not support \"min-width\" on table elements."
     }
   ],
   "categories":[
@@ -28,7 +35,9 @@
       "7":"y",
       "8":"y",
       "9":"y",
-      "10":"y"
+      "10":"y",
+      "11":"y",
+      "TP":"y"
     },
     "firefox":{
       "2":"y",
@@ -50,7 +59,28 @@
       "16":"y",
       "17":"y",
       "18":"y",
-      "19":"y"
+      "19":"y",
+      "20":"y",
+      "21":"y",
+      "22":"y",
+      "23":"y",
+      "24":"y",
+      "25":"y",
+      "26":"y",
+      "27":"y",
+      "28":"y",
+      "29":"y",
+      "30":"y",
+      "31":"y",
+      "32":"y",
+      "33":"y",
+      "34":"y",
+      "35":"y",
+      "36":"y",
+      "37":"y",
+      "38":"y",
+      "39":"y",
+      "40":"y"
     },
     "chrome":{
       "4":"y",
@@ -74,7 +104,26 @@
       "22":"y",
       "23":"y",
       "24":"y",
-      "25":"y"
+      "25":"y",
+      "26":"y",
+      "27":"y",
+      "28":"y",
+      "29":"y",
+      "30":"y",
+      "31":"y",
+      "32":"y",
+      "33":"y",
+      "34":"y",
+      "35":"y",
+      "36":"y",
+      "37":"y",
+      "38":"y",
+      "39":"y",
+      "40":"y",
+      "41":"y",
+      "42":"y",
+      "43":"y",
+      "44":"y"
     },
     "safari":{
       "3.1":"y",
@@ -82,7 +131,11 @@
       "4":"y",
       "5":"y",
       "5.1":"y",
-      "6":"y"
+      "6":"y",
+      "6.1":"y",
+      "7":"y",
+      "7.1":"y",
+      "8":"y"
     },
     "opera":{
       "9":"y",
@@ -96,17 +149,34 @@
       "11.6":"y",
       "12":"y",
       "12.1":"y",
-      "12.5":"y"
+      "15":"y",
+      "16":"y",
+      "17":"y",
+      "18":"y",
+      "19":"y",
+      "20":"y",
+      "21":"y",
+      "22":"y",
+      "23":"y",
+      "24":"y",
+      "25":"y",
+      "26":"y",
+      "27":"y",
+      "28":"y",
+      "29":"y"
     },
     "ios_saf":{
       "3.2":"y",
       "4.0-4.1":"y",
       "4.2-4.3":"y",
       "5.0-5.1":"y",
-      "6":"y"
+      "6.0-6.1":"y",
+      "7.0-7.1":"y",
+      "8":"y",
+      "8.1-8.3":"y"
     },
     "op_mini":{
-      "5.0-7.0":"y"
+      "5.0-8.0":"y"
     },
     "android":{
       "2.1":"y",
@@ -114,7 +184,11 @@
       "2.3":"y",
       "3":"y",
       "4":"y",
-      "4.1":"y"
+      "4.1":"y",
+      "4.2-4.3":"y",
+      "4.4":"y",
+      "4.4.3-4.4.4":"y",
+      "40":"y"
     },
     "bb":{
       "7":"y",
@@ -126,20 +200,33 @@
       "11.1":"y",
       "11.5":"y",
       "12":"y",
-      "12.1":"y"
+      "12.1":"y",
+      "24":"y"
     },
     "and_chr":{
-      "0":"y"
+      "41":"y"
     },
     "and_ff":{
-      "0":"y"
+      "36":"y"
+    },
+    "ie_mob":{
+      "10":"y",
+      "11":"y"
+    },
+    "and_uc":{
+      "9.9":"y"
     }
   },
   "notes":"IE7 does not support \"inherit\" as a value on any of these properties. IE8 has some bugs with max-width/height combined with overflow: auto/scroll.",
-  "usage_perc_y":95.07,
+  "notes_by_num":{
+    
+  },
+  "usage_perc_y":97.16,
   "usage_perc_a":0,
   "ucprefix":false,
   "parent":"",
   "keywords":"min-width,min-height,max-width,max-height",
+  "ie_id":"",
+  "chrome_id":"",
   "shown":true
 }

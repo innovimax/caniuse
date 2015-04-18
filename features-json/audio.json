@@ -1,40 +1,48 @@
 {
   "title":"Audio element",
-  "description":"Method of playing sound on webpages (without requiring a plug-in)",
-  "spec":"http://www.whatwg.org/specs/web-apps/current-work/multipage/video.html#audio",
-  "status":"wd",
+  "description":"Method of playing sound on webpages (without requiring a plug-in).",
+  "spec":"https://html.spec.whatwg.org/multipage/embedded-content.html#the-audio-element",
+  "status":"ls",
   "links":[
-    {
-      "url":"http://textopia.org/androidsoundformats.html",
-      "title":"File format test page"
-    },
-    {
-      "url":"http://www.jplayer.org/latest/demos/",
-      "title":"Demos of audio player that uses <audio>"
-    },
     {
       "url":"http://html5doctor.com/native-audio-in-the-browser/",
       "title":"HTML5 Doctor article"
+    },
+    {
+      "url":"https://dev.opera.com/articles/view/everything-you-need-to-know-about-html5-video-and-audio/",
+      "title":"Detailed article on video/audio elements"
+    },
+    {
+      "url":"http://www.jplayer.org/latest/demos/",
+      "title":"Demos of audio player that uses the audio element"
     },
     {
       "url":"http://24ways.org/2010/the-state-of-html5-audio",
       "title":"Detailed article on support"
     },
     {
+      "url":"http://textopia.org/androidsoundformats.html",
+      "title":"File format test page"
+    },
+    {
       "url":"http://www.phoboslab.org/log/2011/03/the-state-of-html5-audio",
       "title":"The State of HTML5 Audio"
     },
     {
-      "url":"http://dev.opera.com/articles/view/everything-you-need-to-know-about-html5-video-and-audio/",
-      "title":"Detailed article on video/audio elements"
+      "url":"https://raw.github.com/phiggins42/has.js/master/detect/audio.js#audio",
+      "title":"has.js test"
+    },
+    {
+      "url":"http://docs.webplatform.org/wiki/html/elements/audio",
+      "title":"WebPlatform Docs"
     }
   ],
   "bugs":[
     {
-      "description":"Audio played from the element in iOS always plays in a full screen player."
+      "description":"Volume is read-only on iOS."
     },
     {
-      "description":"Firefox does not play MP3 audio because of licensing issues."
+      "description":"Chrome on Android does [not support autoplay](https://code.google.com/p/chromium/issues/detail?id=178297) as advised by the specification."
     }
   ],
   "categories":[
@@ -47,7 +55,9 @@
       "7":"n",
       "8":"n",
       "9":"y",
-      "10":"y"
+      "10":"y",
+      "11":"y",
+      "TP":"y"
     },
     "firefox":{
       "2":"n",
@@ -69,7 +79,28 @@
       "16":"y",
       "17":"y",
       "18":"y",
-      "19":"y"
+      "19":"y",
+      "20":"y",
+      "21":"y",
+      "22":"y",
+      "23":"y",
+      "24":"y",
+      "25":"y",
+      "26":"y",
+      "27":"y",
+      "28":"y",
+      "29":"y",
+      "30":"y",
+      "31":"y",
+      "32":"y",
+      "33":"y",
+      "34":"y",
+      "35":"y",
+      "36":"y",
+      "37":"y",
+      "38":"y",
+      "39":"y",
+      "40":"y"
     },
     "chrome":{
       "4":"y",
@@ -93,7 +124,26 @@
       "22":"y",
       "23":"y",
       "24":"y",
-      "25":"y"
+      "25":"y",
+      "26":"y",
+      "27":"y",
+      "28":"y",
+      "29":"y",
+      "30":"y",
+      "31":"y",
+      "32":"y",
+      "33":"y",
+      "34":"y",
+      "35":"y",
+      "36":"y",
+      "37":"y",
+      "38":"y",
+      "39":"y",
+      "40":"y",
+      "41":"y",
+      "42":"y",
+      "43":"y",
+      "44":"y"
     },
     "safari":{
       "3.1":"n",
@@ -101,7 +151,11 @@
       "4":"y",
       "5":"y",
       "5.1":"y",
-      "6":"y"
+      "6":"y",
+      "6.1":"y",
+      "7":"y",
+      "7.1":"y",
+      "8":"y"
     },
     "opera":{
       "9":"n",
@@ -115,17 +169,34 @@
       "11.6":"y",
       "12":"y",
       "12.1":"y",
-      "12.5":"y"
+      "15":"y",
+      "16":"y",
+      "17":"y",
+      "18":"y",
+      "19":"y",
+      "20":"y",
+      "21":"y",
+      "22":"y",
+      "23":"y",
+      "24":"y",
+      "25":"y",
+      "26":"y",
+      "27":"y",
+      "28":"y",
+      "29":"y"
     },
     "ios_saf":{
       "3.2":"n",
       "4.0-4.1":"y",
       "4.2-4.3":"y",
       "5.0-5.1":"y",
-      "6":"y"
+      "6.0-6.1":"y",
+      "7.0-7.1":"y",
+      "8":"y",
+      "8.1-8.3":"y"
     },
     "op_mini":{
-      "5.0-7.0":"n"
+      "5.0-8.0":"n"
     },
     "android":{
       "2.1":"n",
@@ -133,7 +204,11 @@
       "2.3":"y",
       "3":"y",
       "4":"y",
-      "4.1":"y"
+      "4.1":"y",
+      "4.2-4.3":"y",
+      "4.4":"y",
+      "4.4.3-4.4.4":"y",
+      "40":"y"
     },
     "bb":{
       "7":"y",
@@ -145,20 +220,33 @@
       "11.1":"y",
       "11.5":"y",
       "12":"y",
-      "12.1":"y"
+      "12.1":"y",
+      "24":"y"
     },
     "and_chr":{
-      "0":"y"
+      "41":"y"
     },
     "and_ff":{
-      "0":"y"
+      "36":"y"
+    },
+    "ie_mob":{
+      "10":"y",
+      "11":"y"
+    },
+    "and_uc":{
+      "9.9":"y"
     }
   },
   "notes":"",
-  "usage_perc_y":80.79,
-  "usage_perc_a":0.04,
+  "notes_by_num":{
+    
+  },
+  "usage_perc_y":91.84,
+  "usage_perc_a":0.03,
   "ucprefix":false,
   "parent":"",
-  "keywords":"",
+  "keywords":"<audio>",
+  "ie_id":"",
+  "chrome_id":"",
   "shown":true
 }

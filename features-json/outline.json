@@ -5,16 +5,21 @@
   "status":"rec",
   "links":[
     {
-      "url":"https://developer.mozilla.org/en-US/docs/CSS/outline",
-      "title":"Mozilla Developer Network: outline"
-    },
-    {
       "url":"http://dev.w3.org/csswg/css3-ui/#outline",
       "title":"CSS Basic User Interface Module Level 3"
+    },
+    {
+      "url":"https://developer.mozilla.org/en-US/docs/CSS/outline",
+      "title":"Mozilla Developer Network: outline"
     }
   ],
   "bugs":[
-    
+    {
+      "description":"IE9 and IE10 don't support outline-offset as defined here: http://dev.w3.org/csswg/css3-ui/#outline-offset0"
+    },
+    {
+      "description":"Some versions of Firefox, if not all, place the outline outside of the element's margin property."
+    }
   ],
   "categories":[
     "CSS2"
@@ -25,8 +30,10 @@
       "6":"n",
       "7":"n",
       "8":"y",
-      "9":"y",
-      "10":"y"
+      "9":"y #1",
+      "10":"y #1",
+      "11":"y #1",
+      "TP":"y #1"
     },
     "firefox":{
       "2":"y",
@@ -48,7 +55,28 @@
       "16":"y",
       "17":"y",
       "18":"y",
-      "19":"y"
+      "19":"y",
+      "20":"y",
+      "21":"y",
+      "22":"y",
+      "23":"y",
+      "24":"y",
+      "25":"y",
+      "26":"y",
+      "27":"y",
+      "28":"y",
+      "29":"y",
+      "30":"y",
+      "31":"y",
+      "32":"y",
+      "33":"y",
+      "34":"y",
+      "35":"y",
+      "36":"y",
+      "37":"y",
+      "38":"y",
+      "39":"y",
+      "40":"y"
     },
     "chrome":{
       "4":"y",
@@ -72,7 +100,26 @@
       "22":"y",
       "23":"y",
       "24":"y",
-      "25":"y"
+      "25":"y",
+      "26":"y",
+      "27":"y",
+      "28":"y",
+      "29":"y",
+      "30":"y",
+      "31":"y",
+      "32":"y",
+      "33":"y",
+      "34":"y",
+      "35":"y",
+      "36":"y",
+      "37":"y",
+      "38":"y",
+      "39":"y",
+      "40":"y",
+      "41":"y",
+      "42":"y",
+      "43":"y",
+      "44":"y"
     },
     "safari":{
       "3.1":"y",
@@ -80,7 +127,11 @@
       "4":"y",
       "5":"y",
       "5.1":"y",
-      "6":"y"
+      "6":"y",
+      "6.1":"y",
+      "7":"y",
+      "7.1":"y",
+      "8":"y"
     },
     "opera":{
       "9":"y",
@@ -93,18 +144,35 @@
       "11.5":"y",
       "11.6":"y",
       "12":"y",
-      "12.1":"y",
-      "12.5":"y"
+      "12.1":"y #1",
+      "15":"y",
+      "16":"y",
+      "17":"y",
+      "18":"y",
+      "19":"y",
+      "20":"y",
+      "21":"y",
+      "22":"y",
+      "23":"y",
+      "24":"y",
+      "25":"y",
+      "26":"y",
+      "27":"y",
+      "28":"y",
+      "29":"y"
     },
     "ios_saf":{
       "3.2":"y",
       "4.0-4.1":"y",
       "4.2-4.3":"y",
       "5.0-5.1":"y",
-      "6":"y"
+      "6.0-6.1":"y",
+      "7.0-7.1":"y",
+      "8":"y",
+      "8.1-8.3":"y"
     },
     "op_mini":{
-      "5.0-7.0":"n"
+      "5.0-8.0":"n"
     },
     "android":{
       "2.1":"y",
@@ -112,7 +180,11 @@
       "2.3":"y",
       "3":"y",
       "4":"y",
-      "4.1":"y"
+      "4.1":"y",
+      "4.2-4.3":"y",
+      "4.4":"y",
+      "4.4.3-4.4.4":"y",
+      "40":"y"
     },
     "bb":{
       "7":"y",
@@ -124,20 +196,33 @@
       "11.1":"y",
       "11.5":"y",
       "12":"y",
-      "12.1":"y"
+      "12.1":"y",
+      "24":"y"
     },
     "and_chr":{
-      "0":"y"
+      "41":"y"
     },
     "and_ff":{
-      "0":"y"
+      "36":"y"
+    },
+    "ie_mob":{
+      "10":"y #1",
+      "11":"y #1"
+    },
+    "and_uc":{
+      "9.9":"y"
     }
   },
-  "notes":"Starting with Gecko 1.8 (Firefox 1.5), the standard CSS 2.1 'outline' is preferred to -moz-outline. Starting with Gecko 1.9.2 <a href='https://developer.mozilla.org/en-US/docs/CSS/-moz-outline'>-moz-outline</a> is no longer supported at all.",
-  "usage_perc_y":92.12,
+  "notes":"",
+  "notes_by_num":{
+    "1":"Also supports the value of `invert` for `outline-color`. (support of this value is optional for browsers)"
+  },
+  "usage_perc_y":94.28,
   "usage_perc_a":0,
   "ucprefix":false,
   "parent":"",
   "keywords":"-moz-outline,outline-width,outline-style,outline-color",
+  "ie_id":"",
+  "chrome_id":"",
   "shown":true
 }

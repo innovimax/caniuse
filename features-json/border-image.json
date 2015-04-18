@@ -7,6 +7,10 @@
     {
       "url":"http://www.css3files.com/border/",
       "title":"Information page"
+    },
+    {
+      "url":"http://docs.webplatform.org/wiki/css/properties/border-image",
+      "title":"WebPlatform Docs"
     }
   ],
   "bugs":[
@@ -22,7 +26,9 @@
       "7":"n",
       "8":"n",
       "9":"n",
-      "10":"n"
+      "10":"n",
+      "11":"y",
+      "TP":"y"
     },
     "firefox":{
       "2":"n",
@@ -44,7 +50,28 @@
       "16":"y",
       "17":"y",
       "18":"y",
-      "19":"y"
+      "19":"y",
+      "20":"y",
+      "21":"y",
+      "22":"y",
+      "23":"y",
+      "24":"y",
+      "25":"y",
+      "26":"y",
+      "27":"y",
+      "28":"y",
+      "29":"y",
+      "30":"y",
+      "31":"y",
+      "32":"y",
+      "33":"y",
+      "34":"y",
+      "35":"y",
+      "36":"y",
+      "37":"y",
+      "38":"y",
+      "39":"y",
+      "40":"y"
     },
     "chrome":{
       "4":"a x",
@@ -68,7 +95,26 @@
       "22":"y",
       "23":"y",
       "24":"y",
-      "25":"y"
+      "25":"y",
+      "26":"y",
+      "27":"y",
+      "28":"y",
+      "29":"y",
+      "30":"y",
+      "31":"y",
+      "32":"y",
+      "33":"y",
+      "34":"y",
+      "35":"y",
+      "36":"y",
+      "37":"y",
+      "38":"y",
+      "39":"y",
+      "40":"y",
+      "41":"y",
+      "42":"y",
+      "43":"y",
+      "44":"y"
     },
     "safari":{
       "3.1":"a x",
@@ -76,7 +122,11 @@
       "4":"a x",
       "5":"a x",
       "5.1":"a x",
-      "6":"y"
+      "6":"y",
+      "6.1":"y",
+      "7":"y",
+      "7.1":"y",
+      "8":"y"
     },
     "opera":{
       "9":"n",
@@ -90,17 +140,34 @@
       "11.6":"a x",
       "12":"a x",
       "12.1":"a x",
-      "12.5":"a x"
+      "15":"y",
+      "16":"y",
+      "17":"y",
+      "18":"y",
+      "19":"y",
+      "20":"y",
+      "21":"y",
+      "22":"y",
+      "23":"y",
+      "24":"y",
+      "25":"y",
+      "26":"y",
+      "27":"y",
+      "28":"y",
+      "29":"y"
     },
     "ios_saf":{
       "3.2":"a x",
       "4.0-4.1":"a x",
       "4.2-4.3":"a x",
       "5.0-5.1":"a x",
-      "6":"a x"
+      "6.0-6.1":"y",
+      "7.0-7.1":"y",
+      "8":"y",
+      "8.1-8.3":"y"
     },
     "op_mini":{
-      "5.0-7.0":"n"
+      "5.0-8.0":"a x"
     },
     "android":{
       "2.1":"a x",
@@ -108,7 +175,11 @@
       "2.3":"a x",
       "3":"a x",
       "4":"a x",
-      "4.1":"a x"
+      "4.1":"a x",
+      "4.2-4.3":"a x",
+      "4.4":"y",
+      "4.4.3-4.4.4":"y",
+      "40":"y"
     },
     "bb":{
       "7":"a x",
@@ -120,20 +191,33 @@
       "11.1":"a x",
       "11.5":"a x",
       "12":"a x",
-      "12.1":"a x"
+      "12.1":"a x",
+      "24":"y"
     },
     "and_chr":{
-      "0":"y"
+      "41":"y"
     },
     "and_ff":{
-      "0":"a x"
+      "36":"y"
+    },
+    "ie_mob":{
+      "10":"n",
+      "11":"y"
+    },
+    "and_uc":{
+      "9.9":"y"
     }
   },
-  "notes":"Partial support refers to supporting the shorthand syntax, but not the individual properties (border-image-source, border-image-slice, etc)",
-  "usage_perc_y":46.87,
-  "usage_perc_a":18.83,
+  "notes":"Note that both the `border-style` and `border-width` must be specified (not set to `none` or 0) for border-images to work according to spec, though older implementations may not have this requirement. Partial support refers to supporting the shorthand syntax, but not the individual properties (border-image-source, border-image-slice, etc). ",
+  "notes_by_num":{
+    
+  },
+  "usage_perc_y":84.64,
+  "usage_perc_a":6.87,
   "ucprefix":false,
   "parent":"",
   "keywords":"",
+  "ie_id":"",
+  "chrome_id":"",
   "shown":true
 }

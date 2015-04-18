@@ -5,16 +5,22 @@
   "status":"cr",
   "links":[
     {
+      "url":"https://developer.mozilla.org/en/CSS/repeating-linear-gradient",
+      "title":"MDN article"
+    },
+    {
       "url":"http://www.css3files.com/gradient/#repeatinglineargradient",
       "title":"Information page"
     },
     {
-      "url":"https://developer.mozilla.org/en/CSS/repeating-linear-gradient",
-      "title":"MDN article"
+      "url":"http://docs.webplatform.org/wiki/css/repeating-linear-gradient",
+      "title":"WebPlatform Docs"
     }
   ],
   "bugs":[
-    
+    {
+      "description":"Partial support in Opera 11.10 and 11.50 refers to only having support for linear gradients."
+    }
   ],
   "categories":[
     "CSS3"
@@ -26,7 +32,9 @@
       "7":"n",
       "8":"n",
       "9":"n",
-      "10":"y"
+      "10":"y",
+      "11":"y",
+      "TP":"y"
     },
     "firefox":{
       "2":"n",
@@ -48,7 +56,28 @@
       "16":"y",
       "17":"y",
       "18":"y",
-      "19":"y"
+      "19":"y",
+      "20":"y",
+      "21":"y",
+      "22":"y",
+      "23":"y",
+      "24":"y",
+      "25":"y",
+      "26":"y",
+      "27":"y",
+      "28":"y",
+      "29":"y",
+      "30":"y",
+      "31":"y",
+      "32":"y",
+      "33":"y",
+      "34":"y",
+      "35":"y",
+      "36":"y",
+      "37":"y",
+      "38":"y",
+      "39":"y",
+      "40":"y"
     },
     "chrome":{
       "4":"n",
@@ -72,7 +101,26 @@
       "22":"y x",
       "23":"y x",
       "24":"y x",
-      "25":"y x"
+      "25":"y x",
+      "26":"y",
+      "27":"y",
+      "28":"y",
+      "29":"y",
+      "30":"y",
+      "31":"y",
+      "32":"y",
+      "33":"y",
+      "34":"y",
+      "35":"y",
+      "36":"y",
+      "37":"y",
+      "38":"y",
+      "39":"y",
+      "40":"y",
+      "41":"y",
+      "42":"y",
+      "43":"y",
+      "44":"y"
     },
     "safari":{
       "3.1":"n",
@@ -80,7 +128,11 @@
       "4":"n",
       "5":"n",
       "5.1":"y x",
-      "6":"y x"
+      "6":"y x",
+      "6.1":"y",
+      "7":"y",
+      "7.1":"y",
+      "8":"y"
     },
     "opera":{
       "9":"n",
@@ -94,17 +146,34 @@
       "11.6":"y x",
       "12":"y x",
       "12.1":"y",
-      "12.5":"y"
+      "15":"y",
+      "16":"y",
+      "17":"y",
+      "18":"y",
+      "19":"y",
+      "20":"y",
+      "21":"y",
+      "22":"y",
+      "23":"y",
+      "24":"y",
+      "25":"y",
+      "26":"y",
+      "27":"y",
+      "28":"y",
+      "29":"y"
     },
     "ios_saf":{
       "3.2":"n",
       "4.0-4.1":"n",
       "4.2-4.3":"n",
       "5.0-5.1":"y x",
-      "6":"y x"
+      "6.0-6.1":"y x",
+      "7.0-7.1":"y",
+      "8":"y",
+      "8.1-8.3":"y"
     },
     "op_mini":{
-      "5.0-7.0":"n"
+      "5.0-8.0":"n"
     },
     "android":{
       "2.1":"n",
@@ -112,11 +181,15 @@
       "2.3":"n",
       "3":"n",
       "4":"y x",
-      "4.1":"y x"
+      "4.1":"y x",
+      "4.2-4.3":"y x",
+      "4.4":"y",
+      "4.4.3-4.4.4":"y",
+      "40":"y"
     },
     "bb":{
       "7":"n",
-      "10":"y x"
+      "10":"y"
     },
     "op_mob":{
       "10":"n",
@@ -124,20 +197,33 @@
       "11.1":"a x",
       "11.5":"a x",
       "12":"y x",
-      "12.1":"y"
+      "12.1":"y",
+      "24":"y"
     },
     "and_chr":{
-      "0":"y x"
+      "41":"y"
     },
     "and_ff":{
-      "0":"y x"
+      "36":"y"
+    },
+    "ie_mob":{
+      "10":"y",
+      "11":"y"
+    },
+    "and_uc":{
+      "9.9":"y x"
     }
   },
-  "notes":"Partial support in Opera 11.10 and 11.50 also refers to only having support for linear gradients. Firefox 10+ and Opera 11.6+ also support the new \"to (side)\" syntax.",
-  "usage_perc_y":61.37,
-  "usage_perc_a":0.06,
+  "notes":"Firefox 10+, Chrome 26+ and Opera 11.6+ also support the new \"to (side)\" syntax.",
+  "notes_by_num":{
+    
+  },
+  "usage_perc_y":89.71,
+  "usage_perc_a":0.03,
   "ucprefix":false,
   "parent":"css-gradients",
   "keywords":"",
+  "ie_id":"",
+  "chrome_id":"",
   "shown":true
 }

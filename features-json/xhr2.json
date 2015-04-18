@@ -1,25 +1,31 @@
 {
   "title":"XMLHttpRequest 2",
   "description":"Adds more functionality to AJAX requests like file uploads, transfer progress information and the ability to send form data.",
-  "spec":"http://www.w3.org/TR/XMLHttpRequest2/",
-  "status":"wd",
+  "spec":"https://xhr.spec.whatwg.org/",
+  "status":"ls",
   "links":[
-    {
-      "url":"https://github.com/3nr1c/jUri.js",
-      "title":"Polyfill for FormData object"
-    },
     {
       "url":"https://developer.mozilla.org/en/XMLHttpRequest/FormData",
       "title":"MDN article on FormData"
     },
     {
-      "url":"http://www.profilepicture.co.uk/tutorials/ajax-file-upload-xmlhttprequest-level-2/",
-      "title":"Article with file upload demo"
+      "url":"https://github.com/3nr1c/jUri.js",
+      "title":"Polyfill for FormData object"
+    },
+    {
+      "url":"http://docs.webplatform.org/wiki/apis/xhr/XMLHttpRequest",
+      "title":"WebPlatform Docs"
     }
   ],
   "bugs":[
     {
-      "description":"In both Firefox 9 and Chrome 16, xhr.timeout and xhr.ontimeout don't appear to be supported."
+      "description":"xhr.timeout and xhr.ontimeout are supported in Chrome 29+ and Firefox 12+."
+    },
+    {
+      "description":"Firefox 3.5 and 3.6 partial support refers to only including support for the progress event."
+    },
+    {
+      "description":"WebKit versions 535 and older (r103502) do not implement the onloadend event"
     }
   ],
   "categories":[
@@ -33,7 +39,9 @@
       "7":"n",
       "8":"n",
       "9":"n",
-      "10":"y"
+      "10":"y",
+      "11":"y",
+      "TP":"y"
     },
     "firefox":{
       "2":"n",
@@ -55,7 +63,28 @@
       "16":"y",
       "17":"y",
       "18":"y",
-      "19":"y"
+      "19":"y",
+      "20":"y",
+      "21":"y",
+      "22":"y",
+      "23":"y",
+      "24":"y",
+      "25":"y",
+      "26":"y",
+      "27":"y",
+      "28":"y",
+      "29":"y",
+      "30":"y",
+      "31":"y",
+      "32":"y",
+      "33":"y",
+      "34":"y",
+      "35":"y",
+      "36":"y",
+      "37":"y",
+      "38":"y",
+      "39":"y",
+      "40":"y"
     },
     "chrome":{
       "4":"u",
@@ -79,7 +108,26 @@
       "22":"y",
       "23":"y",
       "24":"y",
-      "25":"y"
+      "25":"y",
+      "26":"y",
+      "27":"y",
+      "28":"y",
+      "29":"y",
+      "30":"y",
+      "31":"y",
+      "32":"y",
+      "33":"y",
+      "34":"y",
+      "35":"y",
+      "36":"y",
+      "37":"y",
+      "38":"y",
+      "39":"y",
+      "40":"y",
+      "41":"y",
+      "42":"y",
+      "43":"y",
+      "44":"y"
     },
     "safari":{
       "3.1":"n",
@@ -87,7 +135,11 @@
       "4":"n",
       "5":"y",
       "5.1":"y",
-      "6":"y"
+      "6":"y",
+      "6.1":"y",
+      "7":"y",
+      "7.1":"y",
+      "8":"y"
     },
     "opera":{
       "9":"n",
@@ -101,17 +153,34 @@
       "11.6":"n",
       "12":"y",
       "12.1":"y",
-      "12.5":"y"
+      "15":"y",
+      "16":"y",
+      "17":"y",
+      "18":"y",
+      "19":"y",
+      "20":"y",
+      "21":"y",
+      "22":"y",
+      "23":"y",
+      "24":"y",
+      "25":"y",
+      "26":"y",
+      "27":"y",
+      "28":"y",
+      "29":"y"
     },
     "ios_saf":{
       "3.2":"n",
       "4.0-4.1":"n",
       "4.2-4.3":"n",
       "5.0-5.1":"y",
-      "6":"y"
+      "6.0-6.1":"y",
+      "7.0-7.1":"y",
+      "8":"y",
+      "8.1-8.3":"y"
     },
     "op_mini":{
-      "5.0-7.0":"n"
+      "5.0-8.0":"n"
     },
     "android":{
       "2.1":"n",
@@ -119,7 +188,11 @@
       "2.3":"n",
       "3":"y",
       "4":"y",
-      "4.1":"y"
+      "4.1":"y",
+      "4.2-4.3":"y",
+      "4.4":"y",
+      "4.4.3-4.4.4":"y",
+      "40":"y"
     },
     "bb":{
       "7":"y",
@@ -131,20 +204,33 @@
       "11.1":"n",
       "11.5":"n",
       "12":"y",
-      "12.1":"y"
+      "12.1":"y",
+      "24":"y"
     },
     "and_chr":{
-      "0":"y"
+      "41":"y"
     },
     "and_ff":{
-      "0":"y"
+      "36":"y"
+    },
+    "ie_mob":{
+      "10":"y",
+      "11":"y"
+    },
+    "and_uc":{
+      "9.9":"y"
     }
   },
-  "notes":"Firefox 3.5 and 3.6 partial support refers to only including support for the progress event.",
-  "usage_perc_y":61.66,
-  "usage_perc_a":0.73,
+  "notes":"",
+  "notes_by_num":{
+    
+  },
+  "usage_perc_y":89.84,
+  "usage_perc_a":0.09,
   "ucprefix":false,
   "parent":"",
   "keywords":"formdata",
+  "ie_id":"",
+  "chrome_id":"",
   "shown":true
 }

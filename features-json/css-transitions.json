@@ -1,17 +1,9 @@
 {
   "title":"CSS3 Transitions",
-  "description":"Simple method of animating certain properties of an element",
+  "description":"Simple method of animating certain properties of an element.",
   "spec":"http://www.w3.org/TR/css3-transitions/",
   "status":"wd",
   "links":[
-    {
-      "url":"http://www.the-art-of-web.com/css/timing-function/",
-      "title":"Examples on timing functions"
-    },
-    {
-      "url":"http://www.opera.com/docs/specs/presto2.12/css/transitions/#anima",
-      "title":"Animation of property types support in Opera"
-    },
     {
       "url":"http://www.webdesignerdepot.com/2010/01/css-transitions-101/",
       "title":"Article on usage"
@@ -19,17 +11,29 @@
     {
       "url":"http://www.css3files.com/transition/",
       "title":"Information page"
+    },
+    {
+      "url":"http://www.the-art-of-web.com/css/timing-function/",
+      "title":"Examples on timing functions"
+    },
+    {
+      "url":"http://www.opera.com/docs/specs/presto2.12/css/transitions/",
+      "title":"Animation of property types support in Opera"
+    },
+    {
+      "url":"http://docs.webplatform.org/wiki/css/properties/transition",
+      "title":"WebPlatform Docs"
     }
   ],
   "bugs":[
     {
-      "description":"Opera (versions unknown) fails at transitioning the background-position property."
+      "description":"Not supported on any pseudo-elements besides ::before and ::after for Firefox, Chrome 26+, Opera 16+ and IE10+."
     },
     {
-      "description":"Not currently supported on ::before and ::after pseudo-elements for any browser but Firefox."
+      "description":"Transitionable properties with calc() derived values are not supported below and including IE11 (http://connect.microsoft.com/IE/feedback/details/762719/css3-calc-bug-inside-transition-or-transform)"
     },
     {
-      "description":"Currently no known browser is able to transition CSS gradients."
+      "description":"'background-size' is not supported below and including IE10"
     }
   ],
   "categories":[
@@ -42,7 +46,9 @@
       "7":"n",
       "8":"n",
       "9":"n",
-      "10":"y"
+      "10":"y",
+      "11":"y",
+      "TP":"y"
     },
     "firefox":{
       "2":"n",
@@ -64,7 +70,28 @@
       "16":"y",
       "17":"y",
       "18":"y",
-      "19":"y"
+      "19":"y",
+      "20":"y",
+      "21":"y",
+      "22":"y",
+      "23":"y",
+      "24":"y",
+      "25":"y",
+      "26":"y",
+      "27":"y",
+      "28":"y",
+      "29":"y",
+      "30":"y",
+      "31":"y",
+      "32":"y",
+      "33":"y",
+      "34":"y",
+      "35":"y",
+      "36":"y",
+      "37":"y",
+      "38":"y",
+      "39":"y",
+      "40":"y"
     },
     "chrome":{
       "4":"y x",
@@ -88,7 +115,26 @@
       "22":"y x",
       "23":"y x",
       "24":"y x",
-      "25":"y x"
+      "25":"y x",
+      "26":"y",
+      "27":"y",
+      "28":"y",
+      "29":"y",
+      "30":"y",
+      "31":"y",
+      "32":"y",
+      "33":"y",
+      "34":"y",
+      "35":"y",
+      "36":"y",
+      "37":"y",
+      "38":"y",
+      "39":"y",
+      "40":"y",
+      "41":"y",
+      "42":"y",
+      "43":"y",
+      "44":"y"
     },
     "safari":{
       "3.1":"y x",
@@ -96,7 +142,11 @@
       "4":"y x",
       "5":"y x",
       "5.1":"y x",
-      "6":"y x"
+      "6":"y x",
+      "6.1":"y",
+      "7":"y",
+      "7.1":"y",
+      "8":"y"
     },
     "opera":{
       "9":"n",
@@ -110,17 +160,34 @@
       "11.6":"y x",
       "12":"y x",
       "12.1":"y",
-      "12.5":"y"
+      "15":"y",
+      "16":"y",
+      "17":"y",
+      "18":"y",
+      "19":"y",
+      "20":"y",
+      "21":"y",
+      "22":"y",
+      "23":"y",
+      "24":"y",
+      "25":"y",
+      "26":"y",
+      "27":"y",
+      "28":"y",
+      "29":"y"
     },
     "ios_saf":{
       "3.2":"y x",
       "4.0-4.1":"y x",
       "4.2-4.3":"y x",
       "5.0-5.1":"y x",
-      "6":"y x"
+      "6.0-6.1":"y x",
+      "7.0-7.1":"y",
+      "8":"y",
+      "8.1-8.3":"y"
     },
     "op_mini":{
-      "5.0-7.0":"n"
+      "5.0-8.0":"n"
     },
     "android":{
       "2.1":"y x",
@@ -128,11 +195,15 @@
       "2.3":"y x",
       "3":"y x",
       "4":"y x",
-      "4.1":"y x"
+      "4.1":"y x",
+      "4.2-4.3":"y x",
+      "4.4":"y",
+      "4.4.3-4.4.4":"y",
+      "40":"y"
     },
     "bb":{
       "7":"y x",
-      "10":"y x"
+      "10":"y"
     },
     "op_mob":{
       "10":"y x",
@@ -140,20 +211,33 @@
       "11.1":"y x",
       "11.5":"y x",
       "12":"y x",
-      "12.1":"y"
+      "12.1":"y",
+      "24":"y"
     },
     "and_chr":{
-      "0":"y x"
+      "41":"y"
     },
     "and_ff":{
-      "0":"y x"
+      "36":"y"
+    },
+    "ie_mob":{
+      "10":"y",
+      "11":"y"
+    },
+    "and_uc":{
+      "9.9":"y x"
     }
   },
-  "notes":"",
-  "usage_perc_y":65.23,
+  "notes":"Support listed is for `transition` properties as well as the `transitionend` event. The prefixed name in WebKit browsers is `webkitTransitionEnd`",
+  "notes_by_num":{
+    
+  },
+  "usage_perc_y":90.12,
   "usage_perc_a":0,
   "ucprefix":false,
   "parent":"",
-  "keywords":"css transition",
+  "keywords":"css transition,transitionend",
+  "ie_id":"",
+  "chrome_id":"",
   "shown":true
 }
